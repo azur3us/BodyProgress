@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BodyProgess.Data\BodyProgess.Data.csproj" />
+    <ProjectReference Include="..\BodyProgress.DTOs\BodyProgress.DTOs.csproj" />
+    <ProjectReference Include="..\BodyProgress.Services\BodyProgress.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>
