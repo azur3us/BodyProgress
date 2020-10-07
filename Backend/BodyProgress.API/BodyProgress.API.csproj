@@ -10,5 +10,9 @@
     <ProjectReference Include="..\BodyProgress.Services\BodyProgress.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 
 </Project>
