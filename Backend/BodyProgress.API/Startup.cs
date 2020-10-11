@@ -30,6 +30,8 @@ namespace BodyProgress.API
             services.AddDbContext<BodyProgressDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddControllers();
+
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +41,13 @@ namespace BodyProgress.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "BodyProgressAPI");
+            });
 
             app.UseHttpsRedirection();
 
